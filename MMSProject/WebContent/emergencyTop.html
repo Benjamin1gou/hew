@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>MMS</title>
+	<meta name="robots" content="noindex,nofollow,noarchive" />
+	<link rel="stylesheet" type="text/css" href="CssFile/html5reset.css">
+	<link rel="stylesheet" type="text/css" href="CssFile/emergencyHeader.css">
+	<link rel="stylesheet" type="text/css" href="CssFile/emergencyTop.css">
+
+
+	<script type="text/javascript"
+	  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDsHzEJ1qRBjIKS3YOdzyMx3YYAIYSI0iI&sensor=false">
+	</script>
+
+	<script src="JsFile/emergencyTop.js" type="text/javascript"></script>
+</head>
+
+<body onload="initialize()">
+<form action = "./EmergencyServlet" method = "get">
+
+	<div id = "all">
+		<div id = "map_canvas">
+		</div>
+
+		<div id = "condition_insert">
+			<div id = "table">
+				<h2>要請診療科</h2>
+				<p><label><input type = "radio" name = "condition" value = "1" checked>内科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "2">精神科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "3">小児科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "4">皮膚科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "5">外科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "6">心臓血管外科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "7">脳神経外科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "8">整形外科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "9">鼻耳咽喉科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "10">眼科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "11">産婦人科</label></p>
+				<p><label><input type = "radio" name = "condition" value = "12">形成外科</label></p>
+			</div>
+			<div id = "triage">
+				<h2>トリアージ</h2>
+				<button type = "submit" name = "triage" value = "1" id = "green">緑</button>
+				<button type = "submit" name = "triage" value = "2" id = "yerrow">黄</button>
+				<button type = "submit" name = "triage" value = "3" id = "red">赤</button>
+				<button type = "submit" name = "triage" value = "4" id = "black">黒</button>
+			</div>
+			<input type = "hidden" name = "t_ido" id = "ido" value = "">
+			<input type = "hidden" name = "t_keido" id = "keido" value = "">
+			<input type = "hidden" name = "t_address" id = "address" value = "">
+		</div>
+	</div>
+</form>
+
+</body>
+</html>

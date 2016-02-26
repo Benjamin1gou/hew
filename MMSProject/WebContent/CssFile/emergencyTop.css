@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+body {
+	overflow-x:hidden;
+	overflow-y:hidden;
+
+	}
+
+#map_canvas {
+	float: left;
+	height: 765px;
+	width: 1045px;
+	border: solid 1px #aaa;
+}
+
+#condition_insert {
+	float: right;
+	height: 765px;
+	width: 300px;
+	border: solid 1px #aaa;
+}
+
+#table {
+	margin-top: 30px;
+	margin-left: 20px;
+	font-size: 120%;
+}
+
+#table p {
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+#triage {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#triage button {
+	height: 50px;
+	font-size: 130%;
+	color: #fff;
+	text-decoration: none;
+	border-style: none;
+	display: block;
+	float:left;
+	width:120px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+
+
+#triage button:nth-of-type(3) {
+	clear:both;
+}
+
+#red {
+	background-color: #FE2E2E;
+}
+
+#yerrow {
+	background-color: #FEF610;
+}
+
+#green {
+	background-color: #40FF00;
+}
+
+#black {
+	background-color: #000;
+}
+
+#yousei input{
+	clear:both;
+	margin-top: 60px;
+	margin-left: 20px;
+	width: 310px;
+	height: 50px;
+	font-size: 130%;
+	color: #fff;
+	text-decoration: none;
+	background-color: #f88;
+	border-style: none;
+	display: block;
+}
+
+#yousei input:hover {
+	background-color: #faa;
+}
